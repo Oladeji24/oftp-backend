@@ -1,8 +1,8 @@
 // Paystack integration for deposit initialization and verification
 const express = require('express');
 const axios = require('axios');
-const pool = require('../db');
-const { logWalletAudit } = require('../auth'); // Reuse audit log
+const pool = require('./db');
+const { logWalletAudit } = require('./auth'); // Reuse audit log
 
 const router = express.Router();
 
