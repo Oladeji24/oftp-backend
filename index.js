@@ -15,6 +15,10 @@ app.use(express.json()); // Parse JSON request bodies
 const authRoutes = require('./auth');
 app.use('/api/auth', authRoutes);
 
+// Import Paystack routes
+const paystackRoutes = require('./paystack');
+app.use('/api/paystack', paystackRoutes);
+
 // Health check route
 app.get('/', (req, res) => {
   res.send('Backend server is running!');
